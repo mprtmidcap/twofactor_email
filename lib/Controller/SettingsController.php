@@ -97,12 +97,6 @@ class SettingsController extends Controller {
 	 * @NoAdminRequired
 	 */
 	public function revokeVerification(): JSONResponse {
-		$user = $this->userSession->getUser();
-
-		if (is_null($user)) {
-			return new JSONResponse([], Http::STATUS_BAD_REQUEST);
-		}
-
-		return new JSONResponse($this->setupService->disable($user));
+		return new JSONResponse([], Http::STATUS_NOT_IMPLEMENTED);
 	}
 }
