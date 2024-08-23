@@ -38,10 +38,6 @@
 			<p v-if="state === states.ENABLED">
 				<L10n text="Two-Factor Authentication via Email is enabled. Codes are sent to {emailAddress}."
 					:options="{emailAddress: emailAddress}" />
-				<br>
-				<button @click="disable">
-					<L10n text="Disable Two-Factor Authentication via Email" />
-				</button>
 			</p>
 		</div>
 	</div>
